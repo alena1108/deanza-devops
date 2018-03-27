@@ -20,7 +20,7 @@ pipeline:
   publish-image:
     image: plugins/docker
     dockerfile: package/Dockerfile
-    repo: rancher/deanza-devops
+    repo: alena1108/deanza-devops
     context: package/
     tag: ${DRONE_TAG}
     secrets: [docker_username, docker_password]

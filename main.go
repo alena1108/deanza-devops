@@ -5,6 +5,7 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/urfave/cli"
+	"time"
 )
 
 var VERSION = "v0.0.0-dev"
@@ -15,8 +16,10 @@ func main() {
 	app.Version = VERSION
 	app.Usage = "You need help!"
 	app.Action = func(c *cli.Context) error {
-		logrus.Info("I'm a turkey")
-		return nil
+		for {
+			logrus.Info("Demo gods, have some mercy and let the demo run well")
+			time.Sleep(1 * time.Second)
+		}
 	}
 
 	app.Run(os.Args)

@@ -10,10 +10,10 @@ SUFFIX=""
 cd $(dirname $0)/../package
 
 TAG=${TAG:-${VERSION}${SUFFIX}}
-REPO=${REPO:-rancher}
+REPO=${REPO:alena1108}
 
 if echo $TAG | grep -q dirty; then
-    TAG=dev
+    TAG=latest
 fi
 
 cp ../bin/deanza-devops .
