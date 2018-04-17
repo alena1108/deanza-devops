@@ -17,7 +17,7 @@ func main() {
 	app.Usage = "You need help!"
 	app.Action = func(c *cli.Context) error {
 		for {
-			logrus.Info("Demo gods, have some mercy and let the demo run well 1")
+			logrus.Info("Demo gods, have some mercy and let the demo run well")
 			time.Sleep(1 * time.Second)
 		}
 	}
