@@ -15,15 +15,3 @@ pipeline:
     when:
       branch: master
       event: tag
-
-
-  publish-image:
-    image: plugins/docker
-    dockerfile: package/Dockerfile
-    repo: alena1108/deanza-devops
-    context: package/
-    tag: ${DRONE_TAG}
-    secrets: [docker_username, docker_password]
-    when:
-      branch: master
-      event: tag
